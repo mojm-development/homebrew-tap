@@ -19,7 +19,12 @@ cask "cavvy" do
   binary "#{appdir}/Cavvy.app/Contents/Helpers/cavvy"
 
   uninstall launchctl: "dev.cavvy.daemon",
-            quit:      "dev.cavvy.app"
+            quit:      "dev.cavvy.app",
+            script:    {
+              executable:   "/usr/bin/pkill",
+              args:         ["-f", "Cavvy.app/Contents/MacOS/cavvyd"],
+              must_succeed: false,
+            }
 
   zap trash: [
     "~/Library/Application Support/cavvy",

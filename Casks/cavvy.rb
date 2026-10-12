@@ -13,7 +13,7 @@ cask "cavvy" do
   end
 
   auto_updates true
-  depends_on macos: :sequoia
+  depends_on macos: :tahoe
 
   app "Cavvy.app"
   binary "#{appdir}/Cavvy.app/Contents/Helpers/cavvy"

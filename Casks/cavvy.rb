@@ -1,6 +1,6 @@
 cask "cavvy" do
   version "0.1.0,1"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "54fa1f9f5797de47d397518767a40dc0148c36db53ad190010b12f8d5e2b612b"
 
   url "https://cavvy.app/downloads/Cavvy-#{version.csv.first}-#{version.csv.second}.dmg"
   name "Cavvy"
